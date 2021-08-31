@@ -4,7 +4,7 @@ import Foundation
 struct BaseResponse : Codable {
     let status : String?
     let totalResults : Int?
-    let articles : [Articles]?
+    let articles : [Article]?
 
     enum CodingKeys: String, CodingKey {
 
@@ -17,7 +17,7 @@ struct BaseResponse : Codable {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         status = try values.decodeIfPresent(String.self, forKey: .status)
         totalResults = try values.decodeIfPresent(Int.self, forKey: .totalResults)
-        articles = try values.decodeIfPresent([Articles].self, forKey: .articles)
+        articles = try values.decodeIfPresent([Article].self, forKey: .articles)
     }
 
 }

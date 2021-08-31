@@ -10,14 +10,22 @@ class NewsViewModel {
     var topHeadlinesResponse : BaseResponse?
     func getTopHighlights(forCountry : String) {
         let url = Util.endPoint + "country=" + forCountry + "&apiKey=" + Util.apiKey
-        print(url)
         URLSession.shared.dataTask(with: URL(string: url)!){
             (data, res, error) in
             if error == nil {
                 if let data = data {
                     do {
                         self.topHeadlinesResponse = try JSONDecoder().decode(BaseResponse.self, from: data)
-                        print(self.topHeadlinesResponse ?? "")
+                        if let articles : [Article] = self.topHeadlinesResponse?.articles {
+                            // Delete all previous articles
+                            let coreDataArticleInterface : CoreDataArticle = CoreDataArticle()
+                            let _ : Bool = coreDataArticleInterface.deleteAllArticles()
+                            // Insert new articles in local DB
+                            for article in articles {
+                                coreDataArticleInterface.createArticle(baseArticle: article)
+                            }
+                            print("Articles Inserted In DB")
+                        }
                     }
                     catch {
                         print(error.localizedDescription)
