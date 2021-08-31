@@ -16,6 +16,10 @@
 		A8EB79A326DE50FA007DC0CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8EB79A126DE50FA007DC0CE /* LaunchScreen.storyboard */; };
 		A8EB79AE26DE50FA007DC0CE /* walrus_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EB79AD26DE50FA007DC0CE /* walrus_testTests.swift */; };
 		A8EB79B926DE50FA007DC0CE /* walrus_testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EB79B826DE50FA007DC0CE /* walrus_testUITests.swift */; };
+		A8EB79CD26DE5314007DC0CE /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EB79CC26DE5314007DC0CE /* Utils.swift */; };
+		A8EB79CF26DE549C007DC0CE /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EB79CE26DE549C007DC0CE /* BaseResponse.swift */; };
+		A8EB79D126DE54C8007DC0CE /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EB79D026DE54C8007DC0CE /* Article.swift */; };
+		A8EB79D326DE54E7007DC0CE /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EB79D226DE54E7007DC0CE /* Source.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,10 @@
 		A8EB79B426DE50FA007DC0CE /* walrus-testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "walrus-testUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8EB79B826DE50FA007DC0CE /* walrus_testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = walrus_testUITests.swift; sourceTree = "<group>"; };
 		A8EB79BA26DE50FA007DC0CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8EB79CC26DE5314007DC0CE /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		A8EB79CE26DE549C007DC0CE /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
+		A8EB79D026DE54C8007DC0CE /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		A8EB79D226DE54E7007DC0CE /* Source.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Source.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +109,16 @@
 		A8EB799226DE50F6007DC0CE /* walrus-test */ = {
 			isa = PBXGroup;
 			children = (
+				A8EB79C926DE51E7007DC0CE /* Controller */,
+				A8EB79C826DE51DD007DC0CE /* ViewModel */,
+				A8EB79C726DE51D6007DC0CE /* View */,
+				A8EB79C626DE51C2007DC0CE /* Model */,
 				A8EB799326DE50F6007DC0CE /* AppDelegate.swift */,
 				A8EB799526DE50F6007DC0CE /* SceneDelegate.swift */,
-				A8EB799726DE50F6007DC0CE /* ViewController.swift */,
-				A8EB799926DE50F6007DC0CE /* Main.storyboard */,
 				A8EB799F26DE50FA007DC0CE /* Assets.xcassets */,
-				A8EB79A126DE50FA007DC0CE /* LaunchScreen.storyboard */,
 				A8EB79A426DE50FA007DC0CE /* Info.plist */,
 				A8EB799C26DE50F6007DC0CE /* walrus_test.xcdatamodeld */,
+				A8EB79CC26DE5314007DC0CE /* Utils.swift */,
 			);
 			path = "walrus-test";
 			sourceTree = "<group>";
@@ -129,6 +139,40 @@
 				A8EB79BA26DE50FA007DC0CE /* Info.plist */,
 			);
 			path = "walrus-testUITests";
+			sourceTree = "<group>";
+		};
+		A8EB79C626DE51C2007DC0CE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A8EB79CE26DE549C007DC0CE /* BaseResponse.swift */,
+				A8EB79D026DE54C8007DC0CE /* Article.swift */,
+				A8EB79D226DE54E7007DC0CE /* Source.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A8EB79C726DE51D6007DC0CE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A8EB79A126DE50FA007DC0CE /* LaunchScreen.storyboard */,
+				A8EB799926DE50F6007DC0CE /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A8EB79C826DE51DD007DC0CE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A8EB79C926DE51E7007DC0CE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A8EB799726DE50F6007DC0CE /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,8 +305,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8EB79D326DE54E7007DC0CE /* Source.swift in Sources */,
+				A8EB79D126DE54C8007DC0CE /* Article.swift in Sources */,
+				A8EB79CD26DE5314007DC0CE /* Utils.swift in Sources */,
 				A8EB799826DE50F6007DC0CE /* ViewController.swift in Sources */,
 				A8EB799E26DE50F6007DC0CE /* walrus_test.xcdatamodeld in Sources */,
+				A8EB79CF26DE549C007DC0CE /* BaseResponse.swift in Sources */,
 				A8EB799426DE50F6007DC0CE /* AppDelegate.swift in Sources */,
 				A8EB799626DE50F6007DC0CE /* SceneDelegate.swift in Sources */,
 			);
