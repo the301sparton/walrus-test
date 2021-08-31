@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A8EB799426DE50F6007DC0CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EB799326DE50F6007DC0CE /* AppDelegate.swift */; };
+		A8EB799626DE50F6007DC0CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EB799526DE50F6007DC0CE /* SceneDelegate.swift */; };
+		A8EB799826DE50F6007DC0CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EB799726DE50F6007DC0CE /* ViewController.swift */; };
+		A8EB799B26DE50F6007DC0CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8EB799926DE50F6007DC0CE /* Main.storyboard */; };
+		A8EB799E26DE50F6007DC0CE /* walrus_test.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A8EB799C26DE50F6007DC0CE /* walrus_test.xcdatamodeld */; };
+		A8EB79A026DE50FA007DC0CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8EB799F26DE50FA007DC0CE /* Assets.xcassets */; };
+		A8EB79A326DE50FA007DC0CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8EB79A126DE50FA007DC0CE /* LaunchScreen.storyboard */; };
+		A8EB79AE26DE50FA007DC0CE /* walrus_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EB79AD26DE50FA007DC0CE /* walrus_testTests.swift */; };
+		A8EB79B926DE50FA007DC0CE /* walrus_testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EB79B826DE50FA007DC0CE /* walrus_testUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A8EB79AA26DE50FA007DC0CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A8EB798826DE50F6007DC0CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A8EB798F26DE50F6007DC0CE;
+			remoteInfo = "walrus-test";
+		};
+		A8EB79B526DE50FA007DC0CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A8EB798826DE50F6007DC0CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A8EB798F26DE50F6007DC0CE;
+			remoteInfo = "walrus-test";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A8EB799026DE50F6007DC0CE /* walrus-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "walrus-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8EB799326DE50F6007DC0CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A8EB799526DE50F6007DC0CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A8EB799726DE50F6007DC0CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A8EB799A26DE50F6007DC0CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A8EB799D26DE50F6007DC0CE /* walrus_test.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = walrus_test.xcdatamodel; sourceTree = "<group>"; };
+		A8EB799F26DE50FA007DC0CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A8EB79A226DE50FA007DC0CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A8EB79A426DE50FA007DC0CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8EB79A926DE50FA007DC0CE /* walrus-testTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "walrus-testTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8EB79AD26DE50FA007DC0CE /* walrus_testTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = walrus_testTests.swift; sourceTree = "<group>"; };
+		A8EB79AF26DE50FA007DC0CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8EB79B426DE50FA007DC0CE /* walrus-testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "walrus-testUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8EB79B826DE50FA007DC0CE /* walrus_testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = walrus_testUITests.swift; sourceTree = "<group>"; };
+		A8EB79BA26DE50FA007DC0CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A8EB798D26DE50F6007DC0CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8EB79A626DE50FA007DC0CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8EB79B126DE50FA007DC0CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A8EB798726DE50F6007DC0CE = {
+			isa = PBXGroup;
+			children = (
+				A8EB799226DE50F6007DC0CE /* walrus-test */,
+				A8EB79AC26DE50FA007DC0CE /* walrus-testTests */,
+				A8EB79B726DE50FA007DC0CE /* walrus-testUITests */,
+				A8EB799126DE50F6007DC0CE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A8EB799126DE50F6007DC0CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A8EB799026DE50F6007DC0CE /* walrus-test.app */,
+				A8EB79A926DE50FA007DC0CE /* walrus-testTests.xctest */,
+				A8EB79B426DE50FA007DC0CE /* walrus-testUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A8EB799226DE50F6007DC0CE /* walrus-test */ = {
+			isa = PBXGroup;
+			children = (
+				A8EB799326DE50F6007DC0CE /* AppDelegate.swift */,
+				A8EB799526DE50F6007DC0CE /* SceneDelegate.swift */,
+				A8EB799726DE50F6007DC0CE /* ViewController.swift */,
+				A8EB799926DE50F6007DC0CE /* Main.storyboard */,
+				A8EB799F26DE50FA007DC0CE /* Assets.xcassets */,
+				A8EB79A126DE50FA007DC0CE /* LaunchScreen.storyboard */,
+				A8EB79A426DE50FA007DC0CE /* Info.plist */,
+				A8EB799C26DE50F6007DC0CE /* walrus_test.xcdatamodeld */,
+			);
+			path = "walrus-test";
+			sourceTree = "<group>";
+		};
+		A8EB79AC26DE50FA007DC0CE /* walrus-testTests */ = {
+			isa = PBXGroup;
+			children = (
+				A8EB79AD26DE50FA007DC0CE /* walrus_testTests.swift */,
+				A8EB79AF26DE50FA007DC0CE /* Info.plist */,
+			);
+			path = "walrus-testTests";
+			sourceTree = "<group>";
+		};
+		A8EB79B726DE50FA007DC0CE /* walrus-testUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A8EB79B826DE50FA007DC0CE /* walrus_testUITests.swift */,
+				A8EB79BA26DE50FA007DC0CE /* Info.plist */,
+			);
+			path = "walrus-testUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A8EB798F26DE50F6007DC0CE /* walrus-test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8EB79BD26DE50FA007DC0CE /* Build configuration list for PBXNativeTarget "walrus-test" */;
+			buildPhases = (
+				A8EB798C26DE50F6007DC0CE /* Sources */,
+				A8EB798D26DE50F6007DC0CE /* Frameworks */,
+				A8EB798E26DE50F6007DC0CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "walrus-test";
+			productName = "walrus-test";
+			productReference = A8EB799026DE50F6007DC0CE /* walrus-test.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A8EB79A826DE50FA007DC0CE /* walrus-testTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8EB79C026DE50FA007DC0CE /* Build configuration list for PBXNativeTarget "walrus-testTests" */;
+			buildPhases = (
+				A8EB79A526DE50FA007DC0CE /* Sources */,
+				A8EB79A626DE50FA007DC0CE /* Frameworks */,
+				A8EB79A726DE50FA007DC0CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A8EB79AB26DE50FA007DC0CE /* PBXTargetDependency */,
+			);
+			name = "walrus-testTests";
+			productName = "walrus-testTests";
+			productReference = A8EB79A926DE50FA007DC0CE /* walrus-testTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A8EB79B326DE50FA007DC0CE /* walrus-testUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8EB79C326DE50FA007DC0CE /* Build configuration list for PBXNativeTarget "walrus-testUITests" */;
+			buildPhases = (
+				A8EB79B026DE50FA007DC0CE /* Sources */,
+				A8EB79B126DE50FA007DC0CE /* Frameworks */,
+				A8EB79B226DE50FA007DC0CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A8EB79B626DE50FA007DC0CE /* PBXTargetDependency */,
+			);
+			name = "walrus-testUITests";
+			productName = "walrus-testUITests";
+			productReference = A8EB79B426DE50FA007DC0CE /* walrus-testUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A8EB798826DE50F6007DC0CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					A8EB798F26DE50F6007DC0CE = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					A8EB79A826DE50FA007DC0CE = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = A8EB798F26DE50F6007DC0CE;
+					};
+					A8EB79B326DE50FA007DC0CE = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = A8EB798F26DE50F6007DC0CE;
+					};
+				};
+			};
+			buildConfigurationList = A8EB798B26DE50F6007DC0CE /* Build configuration list for PBXProject "walrus-test" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A8EB798726DE50F6007DC0CE;
+			productRefGroup = A8EB799126DE50F6007DC0CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A8EB798F26DE50F6007DC0CE /* walrus-test */,
+				A8EB79A826DE50FA007DC0CE /* walrus-testTests */,
+				A8EB79B326DE50FA007DC0CE /* walrus-testUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A8EB798E26DE50F6007DC0CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8EB79A326DE50FA007DC0CE /* LaunchScreen.storyboard in Resources */,
+				A8EB79A026DE50FA007DC0CE /* Assets.xcassets in Resources */,
+				A8EB799B26DE50F6007DC0CE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8EB79A726DE50FA007DC0CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8EB79B226DE50FA007DC0CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A8EB798C26DE50F6007DC0CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8EB799826DE50F6007DC0CE /* ViewController.swift in Sources */,
+				A8EB799E26DE50F6007DC0CE /* walrus_test.xcdatamodeld in Sources */,
+				A8EB799426DE50F6007DC0CE /* AppDelegate.swift in Sources */,
+				A8EB799626DE50F6007DC0CE /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8EB79A526DE50FA007DC0CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8EB79AE26DE50FA007DC0CE /* walrus_testTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8EB79B026DE50FA007DC0CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8EB79B926DE50FA007DC0CE /* walrus_testUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A8EB79AB26DE50FA007DC0CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A8EB798F26DE50F6007DC0CE /* walrus-test */;
+			targetProxy = A8EB79AA26DE50FA007DC0CE /* PBXContainerItemProxy */;
+		};
+		A8EB79B626DE50FA007DC0CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A8EB798F26DE50F6007DC0CE /* walrus-test */;
+			targetProxy = A8EB79B526DE50FA007DC0CE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A8EB799926DE50F6007DC0CE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8EB799A26DE50F6007DC0CE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A8EB79A126DE50FA007DC0CE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8EB79A226DE50FA007DC0CE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A8EB79BB26DE50FA007DC0CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A8EB79BC26DE50FA007DC0CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A8EB79BE26DE50FA007DC0CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "walrus-test/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ctz.walrus-test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A8EB79BF26DE50FA007DC0CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "walrus-test/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ctz.walrus-test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A8EB79C126DE50FA007DC0CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "walrus-testTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ctz.walrus-testTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/walrus-test.app/walrus-test";
+			};
+			name = Debug;
+		};
+		A8EB79C226DE50FA007DC0CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "walrus-testTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ctz.walrus-testTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/walrus-test.app/walrus-test";
+			};
+			name = Release;
+		};
+		A8EB79C426DE50FA007DC0CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "walrus-testUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ctz.walrus-testUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "walrus-test";
+			};
+			name = Debug;
+		};
+		A8EB79C526DE50FA007DC0CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "walrus-testUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ctz.walrus-testUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "walrus-test";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A8EB798B26DE50F6007DC0CE /* Build configuration list for PBXProject "walrus-test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8EB79BB26DE50FA007DC0CE /* Debug */,
+				A8EB79BC26DE50FA007DC0CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8EB79BD26DE50FA007DC0CE /* Build configuration list for PBXNativeTarget "walrus-test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8EB79BE26DE50FA007DC0CE /* Debug */,
+				A8EB79BF26DE50FA007DC0CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8EB79C026DE50FA007DC0CE /* Build configuration list for PBXNativeTarget "walrus-testTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8EB79C126DE50FA007DC0CE /* Debug */,
+				A8EB79C226DE50FA007DC0CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8EB79C326DE50FA007DC0CE /* Build configuration list for PBXNativeTarget "walrus-testUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8EB79C426DE50FA007DC0CE /* Debug */,
+				A8EB79C526DE50FA007DC0CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A8EB799C26DE50F6007DC0CE /* walrus_test.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A8EB799D26DE50F6007DC0CE /* walrus_test.xcdatamodel */,
+			);
+			currentVersion = A8EB799D26DE50F6007DC0CE /* walrus_test.xcdatamodel */;
+			path = walrus_test.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A8EB798826DE50F6007DC0CE /* Project object */;
+}
