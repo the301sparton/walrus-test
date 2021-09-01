@@ -37,7 +37,7 @@ class ArticleCard: UITableViewCell {
         authorName.text = article.author
         articleTitle.text = article.title
         articleContent.text = article.description
-        articleImage.load(url: URL(string: article.urlToImage ?? "")!)
+        articleImage.load(url: URL(string: article.urlToImage ?? "https://www.habx.in/assets/images/videos_not_found.png")!)
     }
 
 }

@@ -8,14 +8,42 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    var newsViewModel = NewsViewModel()
+    var articleList = [Article]()
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        let newsViewModel = NewsViewModel()
-        newsViewModel.getTopHighlights(forCountry: "us")
+        
+        newsViewModel.getTopHighlights(forCountry: "us"){ [self]
+            (result) in
+            if result.articles != nil {
+                articleList = result.articles!
+                DispatchQueue.main.async {
+                    self.tableView.register(UINib(nibName: "ArticleCard", bundle: nil), forCellReuseIdentifier: "ArticleCard")
+                    self.tableView.reloadData()
+                }
+            }
+            
+        }
     }
+}
 
-
+extension ViewController : UITableViewDataSource, UITableViewDelegate {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return articleList.count 
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        // Create Custom Cell for TableView
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ArticleCard", for: indexPath) as? ArticleCard
+        // Get Vehicle At IndexPath
+        let article : Article = (articleList[indexPath.row])
+        // SetUp View
+        cell?.setArticleView(article: article)
+        return cell!
+    }
 }
 

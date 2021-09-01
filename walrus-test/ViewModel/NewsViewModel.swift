@@ -6,9 +6,12 @@
 //
 
 import Foundation
+import UIKit
+
 class NewsViewModel {
     var topHeadlinesResponse : BaseResponse?
-    func getTopHighlights(forCountry : String) {
+    
+    func getTopHighlights(forCountry : String,completion:@escaping (BaseResponse) -> Void) {
         let url = Util.endPoint + "country=" + forCountry + "&apiKey=" + Util.apiKey
         URLSession.shared.dataTask(with: URL(string: url)!){
             (data, res, error) in
@@ -25,6 +28,7 @@ class NewsViewModel {
                                 coreDataArticleInterface.createArticle(baseArticle: article)
                             }
                             print("Articles Inserted In DB")
+                            completion(self.topHeadlinesResponse!)
                         }
                     }
                     catch {
