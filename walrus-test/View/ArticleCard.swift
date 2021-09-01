@@ -24,8 +24,17 @@ class ArticleCard: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.backgroundColor = UIColor(hexaString: "#121212")
+        contentView.layer.cornerRadius = 10
         // Initialization code
     }
+    
+    override func layoutSubviews() {
+           super.layoutSubviews()
+           //set the values for top,left,bottom,right margins
+           let margins = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+           contentView.frame = contentView.frame.inset(by: margins)
+       }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
@@ -38,6 +47,7 @@ class ArticleCard: UITableViewCell {
         articleTitle.text = article.title
         articleContent.text = article.description
         articleImage.load(url: URL(string: article.urlToImage ?? "https://www.habx.in/assets/images/videos_not_found.png")!)
+        
     }
 
 }

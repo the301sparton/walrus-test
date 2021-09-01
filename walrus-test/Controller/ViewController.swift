@@ -45,5 +45,8 @@ extension ViewController : UITableViewDataSource, UITableViewDelegate {
         cell?.setArticleView(article: article)
         return cell!
     }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 450 // Fixed Height for each cell
+    }
 }
 

@@ -41,9 +41,9 @@
                                     <constraint firstAttribute="height" constant="170" id="oFW-iY-w7J"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bNL-vf-IPD">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bNL-vf-IPD">
                                 <rect key="frame" x="0.0" y="214" width="414" height="648"/>
-                                <color key="backgroundColor" red="0.070574067530000006" green="0.070597209039999997" blue="0.070573873819999994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.070588235294117646" green="0.070588235294117646" blue="0.070588235294117646" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="KDz-Jq-bf2"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="lV2-mf-7Ed"/>
