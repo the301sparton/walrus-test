@@ -26,7 +26,7 @@ public class CoreDataArticle: NSManagedObject {
         CoreDataContainer.shared.saveContext()
     }
     
-    func getAllArticles() -> [CoreDataArticle]? {
+    func getAllArticlesToDelete() -> [CoreDataArticle]? {
         do {
             guard let result = try CoreDataContainer.shared.context.fetch(CoreDataArticle.fetchRequest()) as? [CoreDataArticle] else {return nil}
             return result
@@ -37,8 +37,24 @@ public class CoreDataArticle: NSManagedObject {
         }
     }
     
+    func getAllArticles() -> [Article]? {
+        do {
+            guard let result = try CoreDataContainer.shared.context.fetch(CoreDataArticle.fetchRequest()) as? [CoreDataArticle] else {return nil}
+            var articleArray : [Article] = [Article]()
+            for article in result {
+                let articleObj = Article(coreDataArticle: article)
+                articleArray.append(articleObj)
+            }
+            return articleArray
+        }
+        catch let error {
+            print(error.localizedDescription)
+            return nil
+        }
+    }
+    
     func deleteAllArticles() -> Bool {
-        if let articles : [CoreDataArticle] = self.getAllArticles() {
+        if let articles : [CoreDataArticle] = self.getAllArticlesToDelete() {
             for article in articles {
                 CoreDataContainer.shared.context.delete(article)
             }

@@ -21,6 +21,17 @@ struct Article : Codable {
         case publishedAt = "publishedAt"
         case content = "content"
     }
+    
+    init(coreDataArticle : CoreDataArticle) {
+        title = coreDataArticle.title
+        author = coreDataArticle.author
+        description = coreDataArticle.desc
+        url = coreDataArticle.url
+        urlToImage = coreDataArticle.urlToImage
+        publishedAt = coreDataArticle.publishedAt
+        content = ""
+        source = nil
+    }
 
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)

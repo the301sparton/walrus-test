@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A85BD55626DF60E1008046B9 /* ArticleCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = A85BD55526DF60E1008046B9 /* ArticleCard.xib */; };
+		A85BD55826DF645C008046B9 /* ArticleCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85BD55726DF645C008046B9 /* ArticleCard.swift */; };
 		A8EB799426DE50F6007DC0CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EB799326DE50F6007DC0CE /* AppDelegate.swift */; };
 		A8EB799626DE50F6007DC0CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EB799526DE50F6007DC0CE /* SceneDelegate.swift */; };
 		A8EB799826DE50F6007DC0CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EB799726DE50F6007DC0CE /* ViewController.swift */; };
@@ -44,6 +46,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A85BD55526DF60E1008046B9 /* ArticleCard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticleCard.xib; sourceTree = "<group>"; };
+		A85BD55726DF645C008046B9 /* ArticleCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCard.swift; sourceTree = "<group>"; };
 		A8EB799026DE50F6007DC0CE /* walrus-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "walrus-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8EB799326DE50F6007DC0CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8EB799526DE50F6007DC0CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -166,6 +170,8 @@
 			children = (
 				A8EB79A126DE50FA007DC0CE /* LaunchScreen.storyboard */,
 				A8EB799926DE50F6007DC0CE /* Main.storyboard */,
+				A85BD55526DF60E1008046B9 /* ArticleCard.xib */,
+				A85BD55726DF645C008046B9 /* ArticleCard.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -292,6 +298,7 @@
 			files = (
 				A8EB79A326DE50FA007DC0CE /* LaunchScreen.storyboard in Resources */,
 				A8EB79A026DE50FA007DC0CE /* Assets.xcassets in Resources */,
+				A85BD55626DF60E1008046B9 /* ArticleCard.xib in Resources */,
 				A8EB799B26DE50F6007DC0CE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,6 +335,7 @@
 				A8EB79DB26DE7616007DC0CE /* CoreDataContainer.swift in Sources */,
 				A8EB799426DE50F6007DC0CE /* AppDelegate.swift in Sources */,
 				A8EB799626DE50F6007DC0CE /* SceneDelegate.swift in Sources */,
+				A85BD55826DF645C008046B9 /* ArticleCard.swift in Sources */,
 				A8EB79D826DE7575007DC0CE /* CoreDataArticle+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

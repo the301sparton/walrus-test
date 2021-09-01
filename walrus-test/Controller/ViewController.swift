@@ -14,10 +14,6 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         let newsViewModel = NewsViewModel()
         newsViewModel.getTopHighlights(forCountry: "us")
-        
-        let coreDataArticleInterface : CoreDataArticle = CoreDataArticle()
-        let articles : [CoreDataArticle]? = coreDataArticleInterface.getAllArticles()
-        print(articles?.count)
     }
 
 
