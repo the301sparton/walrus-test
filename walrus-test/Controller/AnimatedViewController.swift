@@ -31,6 +31,9 @@ class AnimatedViewController: UIViewController {
             
             self.animateFinal()
         }
+        else if countTap == 3 {
+            self.pushViewController()
+        }
     }
     
     
@@ -82,6 +85,20 @@ class AnimatedViewController: UIViewController {
         scaleAnimate.fillMode = .forwards
         scaleAnimate.beginTime = CACurrentMediaTime()
         layer.add(scaleAnimate, forKey: nil)
+        
+        let label = UILabel(frame: CGRect(x: view.bounds.minX + 30, y: view.bounds.maxY - 180, width: view.bounds.width, height: 150))
+        label.text = "Tap to move\nto view\nNews List."
+        label.textColor = UIColor.white
+        label.font = .boldSystemFont(ofSize: 25)
+        label.numberOfLines = 0
+        
+        view.addSubview(label)
+    }
+    
+    func pushViewController() {
+        if let mainVC : ViewController = (Util.storyBoard.instantiateViewController(withIdentifier: "mainVC") as? ViewController) {
+            self.navigationController!.pushViewController(mainVC, animated: true)
+        }
     }
     
 }
