@@ -19,15 +19,16 @@ struct  Util {
 
 extension UIImageView {
     func load(url: URL) {
-        DispatchQueue.global().async { [weak self] in
-            if let data = try? Data(contentsOf: url) {
-                if let image = UIImage(data: data) {
-                    DispatchQueue.main.async {
-                        self?.image = image
-                    }
-                }
+        let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
+            guard let data = data else {
+                return
+            }
+            // maybe try dispatch to main
+            DispatchQueue.main.async {
+                self.image = UIImage(data: data)
             }
         }
+        task.resume()
     }
 }
 
