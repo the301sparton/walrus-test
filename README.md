@@ -16,7 +16,9 @@ Kindly update the apiKey in the Util.swift file before using.
 
 # References
 [1] https://developer.apple.com/documentation/quartzcore
+
 [2] https://newsapi.org/
+
 [3] https://developer.apple.com/documentation/coredata
 
 
