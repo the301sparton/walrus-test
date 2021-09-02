@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
         newsViewModel.getTopHighlights(forCountry: "us"){ [self]
             (result) in
             if result.articles != nil {
@@ -39,6 +39,7 @@ extension ViewController : UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // Create Custom Cell for TableView
         let cell = tableView.dequeueReusableCell(withIdentifier: "ArticleCard", for: indexPath) as? ArticleCard
+        cell?.parent = self
         // Get Vehicle At IndexPath
         let article : Article = (articleList[indexPath.row])
         // SetUp View

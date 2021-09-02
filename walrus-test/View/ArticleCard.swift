@@ -22,6 +22,9 @@ class ArticleCard: UITableViewCell {
     
     @IBOutlet weak var baseCard: UIView!
     
+    var parent: UIViewController?
+    var articleURL : String = ""
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         self.backgroundColor = UIColor(hexaString: "#121212")
@@ -52,6 +55,16 @@ class ArticleCard: UITableViewCell {
          
         articleImage.load(url: URL(string: article.urlToImage ?? "https://www.habx.in/assets/images/videos_not_found.png")!)
         seeFullArticleButton.layer.cornerRadius = 8
+        articleURL = article.url ?? ""
     }
-
+    
+    
+    @IBAction func seeFullArticleEvent(_ sender: Any) {
+        if let webViewVC : WebViewController = (Util.storyBoard.instantiateViewController(withIdentifier: "webViewVC") as? WebViewController) {
+            webViewVC.articleTitle = articleTitle.text ?? ""
+            webViewVC.articleURL = articleURL
+            parent!.navigationController!.pushViewController(webViewVC, animated: true)
+        }
+    }
+    
 }
