@@ -27,7 +27,6 @@ class NewsViewModel {
                             // Insert new articles in local DB
                             CoreDataArticle.createArticle(baseArticles: articles)
                             self.articlesArray = self.topHeadlinesResponse?.articles
-                            print("Articles Inserted In DB")
                             completion(articles)
                         }
                     }
@@ -37,6 +36,7 @@ class NewsViewModel {
                 }
             }
             else {
+                // If offline return articles from local DB
                 self.articlesArray = CoreDataArticle.getAllArticles()
                 completion(self.articlesArray!)
                 print(error?.localizedDescription as Any)

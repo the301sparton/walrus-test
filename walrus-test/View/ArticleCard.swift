@@ -8,7 +8,7 @@
 import UIKit
 
 class ArticleCard: UITableViewCell {
-
+    
     
     @IBOutlet weak var authorName: UILabel!
     
@@ -33,15 +33,15 @@ class ArticleCard: UITableViewCell {
     }
     
     override func layoutSubviews() {
-           super.layoutSubviews()
-           //set the values for top,left,bottom,right margins
-           let margins = UIEdgeInsets(top: 20, left: 10, bottom: 0, right: 10)
-           contentView.frame = contentView.frame.inset(by: margins)
-       }
-
+        super.layoutSubviews()
+        //set the values for top,left,bottom,right margins
+        let margins = UIEdgeInsets(top: 20, left: 10, bottom: 0, right: 10)
+        contentView.frame = contentView.frame.inset(by: margins)
+    }
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        
         // Configure the view for the selected state
     }
     
@@ -51,9 +51,13 @@ class ArticleCard: UITableViewCell {
             authorName.text = "Author Information Not Available"
         }
         articleTitle.text = article.title
+        
         articleContent.text = article.description ?? "Tap 'See Full News' to read more."
-         
+        if article.description == "" {
+            articleContent.text = "Tap 'See Full News' to read more."
+        }
         articleImage.load(url: URL(string: article.urlToImage ?? "https://www.habx.in/assets/images/videos_not_found.png")!)
+        
         seeFullArticleButton.layer.cornerRadius = 8
         articleURL = article.url ?? ""
     }

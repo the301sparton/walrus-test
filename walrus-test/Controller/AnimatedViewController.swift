@@ -36,7 +36,7 @@ class AnimatedViewController: UIViewController {
         }
     }
     
-    
+    // Scale, Move & Change Color
     func animateAll() {
         let animate = CABasicAnimation(keyPath: "position")
         animate.fromValue = CGPoint(x: layer.position.x, y: layer.position.y)
@@ -66,8 +66,8 @@ class AnimatedViewController: UIViewController {
         layer.add(colorAnimate, forKey: nil)
     }
     
+    // Scale & Change Color
     func animateFinal(){
-        
         let colorAnimate = CABasicAnimation(keyPath: "backgroundColor")
         colorAnimate.fromValue = UIColor.init(hexaString: "#3A8D8F").cgColor
         colorAnimate.toValue =  UIColor.systemGray.cgColor
