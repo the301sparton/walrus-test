@@ -25,6 +25,10 @@ class WebViewController: UIViewController, WKNavigationDelegate {
         
     }
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
 
     @IBAction func closeWebViewAction(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)

@@ -29,6 +29,10 @@ class ViewController: UIViewController {
             
         }
     }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
 }
 
 extension ViewController : UITableViewDataSource, UITableViewDelegate {
