@@ -43,11 +43,15 @@ class ArticleCard: UITableViewCell {
     }
     
     func setArticleView(article : Article){
-        authorName.text = article.author
+        authorName.text = article.author ?? "Author Information Not Available"
+        if article.author == "" {
+            authorName.text = "Author Information Not Available"
+        }
         articleTitle.text = article.title
-        articleContent.text = article.description
+        articleContent.text = article.description ?? "Tap 'See Full News' to read more."
+         
         articleImage.load(url: URL(string: article.urlToImage ?? "https://www.habx.in/assets/images/videos_not_found.png")!)
-        
+        seeFullArticleButton.layer.cornerRadius = 8
     }
 
 }
