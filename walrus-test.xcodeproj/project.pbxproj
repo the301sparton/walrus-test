@@ -134,7 +134,6 @@
 				A8EB799F26DE50FA007DC0CE /* Assets.xcassets */,
 				A8EB79A426DE50FA007DC0CE /* Info.plist */,
 				A8EB799C26DE50F6007DC0CE /* walrus_test.xcdatamodeld */,
-				A8EB79CC26DE5314007DC0CE /* Utils.swift */,
 			);
 			path = "walrus-test";
 			sourceTree = "<group>";
@@ -160,6 +159,7 @@
 		A8EB79C626DE51C2007DC0CE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A8EB79CC26DE5314007DC0CE /* Utils.swift */,
 				A8EB79D726DE7575007DC0CE /* CoreDataArticle+CoreDataProperties.swift */,
 				A8EB79D626DE7575007DC0CE /* CoreDataArticle+CoreDataClass.swift */,
 				A8EB79CE26DE549C007DC0CE /* BaseResponse.swift */,

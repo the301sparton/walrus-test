@@ -19,14 +19,11 @@ class ViewController: UIViewController {
         self.navigationController?.setNavigationBarHidden(true, animated: false)
         newsViewModel.getTopHighlights(forCountry: "us"){ [self]
             (result) in
-            if result.articles != nil {
-                articleList = result.articles!
-                DispatchQueue.main.async {
-                    self.tableView.register(UINib(nibName: "ArticleCard", bundle: nil), forCellReuseIdentifier: "ArticleCard")
-                    self.tableView.reloadData()
-                }
+            articleList = result
+            DispatchQueue.main.async {
+                self.tableView.register(UINib(nibName: "ArticleCard", bundle: nil), forCellReuseIdentifier: "ArticleCard")
+                self.tableView.reloadData()
             }
-            
         }
     }
     

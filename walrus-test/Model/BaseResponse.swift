@@ -4,7 +4,7 @@ import Foundation
 struct BaseResponse : Codable {
     let status : String?
     let totalResults : Int?
-    let articles : [Article]?
+    var articles : [Article]?
 
     enum CodingKeys: String, CodingKey {
 

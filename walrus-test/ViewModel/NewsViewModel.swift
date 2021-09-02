@@ -9,9 +9,11 @@ import Foundation
 import UIKit
 
 class NewsViewModel {
-    var topHeadlinesResponse : BaseResponse?
     
-    func getTopHighlights(forCountry : String,completion:@escaping (BaseResponse) -> Void) {
+    var topHeadlinesResponse : BaseResponse?
+    var articlesArray : [Article]?
+    
+    func getTopHighlights(forCountry : String,completion:@escaping ([Article]) -> Void) {
         let url = Util.endPoint + "country=" + forCountry + "&apiKey=" + Util.apiKey
         URLSession.shared.dataTask(with: URL(string: url)!){
             (data, res, error) in
@@ -24,9 +26,9 @@ class NewsViewModel {
                             let _ : Bool = CoreDataArticle.deleteAllArticles()
                             // Insert new articles in local DB
                             CoreDataArticle.createArticle(baseArticles: articles)
-                            
+                            self.articlesArray = self.topHeadlinesResponse?.articles
                             print("Articles Inserted In DB")
-                            completion(self.topHeadlinesResponse!)
+                            completion(articles)
                         }
                     }
                     catch {
@@ -35,6 +37,8 @@ class NewsViewModel {
                 }
             }
             else {
+                self.articlesArray = CoreDataArticle.getAllArticles()
+                completion(self.articlesArray!)
                 print(error?.localizedDescription as Any)
             }
         }.resume()
