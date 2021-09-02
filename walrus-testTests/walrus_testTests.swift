@@ -18,9 +18,20 @@ class walrus_testTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func test_API_with_ValidRequest_ReturnsVehicelArray() {
+        // Arrangements
+        let expectation = self.expectation(description: "test_API_with_ValidRequest_ReturnsVehicelArray")
+        let viewModel = NewsViewModel()
+        
+        //Act
+        viewModel.getTopHighlights(forCountry: "us") {(result) in
+           //Assert
+            XCTAssertNotNil(result)  // JSON Parse Success
+            XCTAssertNotNil(result.articles) // List Parsed
+            XCTAssert(result.articles!.count > 0) //List Contains Elements
+            expectation.fulfill()
+        }
+        waitForExpectations(timeout: 10, handler: nil)
     }
 
     func testPerformanceExample() throws {
