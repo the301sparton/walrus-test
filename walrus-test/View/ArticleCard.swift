@@ -32,7 +32,7 @@ class ArticleCard: UITableViewCell {
     override func layoutSubviews() {
            super.layoutSubviews()
            //set the values for top,left,bottom,right margins
-           let margins = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+           let margins = UIEdgeInsets(top: 20, left: 10, bottom: 0, right: 10)
            contentView.frame = contentView.frame.inset(by: margins)
        }
 

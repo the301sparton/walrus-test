@@ -21,12 +21,10 @@ class NewsViewModel {
                         self.topHeadlinesResponse = try JSONDecoder().decode(BaseResponse.self, from: data)
                         if let articles : [Article] = self.topHeadlinesResponse?.articles {
                             // Delete all previous articles
-                            let coreDataArticleInterface : CoreDataArticle = CoreDataArticle()
-                            let _ : Bool = coreDataArticleInterface.deleteAllArticles()
+                            let _ : Bool = CoreDataArticle.deleteAllArticles()
                             // Insert new articles in local DB
-                            for article in articles {
-                                coreDataArticleInterface.createArticle(baseArticle: article)
-                            }
+                            CoreDataArticle.createArticle(baseArticles: articles)
+                            
                             print("Articles Inserted In DB")
                             completion(self.topHeadlinesResponse!)
                         }

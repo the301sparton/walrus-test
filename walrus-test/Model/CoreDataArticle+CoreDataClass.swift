@@ -12,21 +12,20 @@ import CoreData
 @objc(CoreDataArticle)
 public class CoreDataArticle: NSManagedObject {
    
-    func createArticle(baseArticle : Article) {
-        
-        let article : CoreDataArticle = CoreDataArticle(context: CoreDataContainer.shared.context)
-        
-        article.title = baseArticle.title
-        article.desc = baseArticle.description
-        article.url = baseArticle.url
-        article.urlToImage = baseArticle.urlToImage
-        article.author = baseArticle.author
-        article.publishedAt = baseArticle.publishedAt
-        
+    static func createArticle(baseArticles : [Article]) {
+        for baseArticle in baseArticles {
+            let article : CoreDataArticle = CoreDataArticle(context: CoreDataContainer.shared.context)
+            article.title = baseArticle.title
+            article.desc = baseArticle.description
+            article.url = baseArticle.url
+            article.urlToImage = baseArticle.urlToImage
+            article.author = baseArticle.author
+            article.publishedAt = baseArticle.publishedAt
+        }
         CoreDataContainer.shared.saveContext()
     }
     
-    func getAllArticlesToDelete() -> [CoreDataArticle]? {
+    static func getAllArticlesToDelete() -> [CoreDataArticle]? {
         do {
             guard let result = try CoreDataContainer.shared.context.fetch(CoreDataArticle.fetchRequest()) as? [CoreDataArticle] else {return nil}
             return result
@@ -37,7 +36,7 @@ public class CoreDataArticle: NSManagedObject {
         }
     }
     
-    func getAllArticles() -> [Article]? {
+    static func getAllArticles() -> [Article]? {
         do {
             guard let result = try CoreDataContainer.shared.context.fetch(CoreDataArticle.fetchRequest()) as? [CoreDataArticle] else {return nil}
             var articleArray : [Article] = [Article]()
@@ -53,7 +52,7 @@ public class CoreDataArticle: NSManagedObject {
         }
     }
     
-    func deleteAllArticles() -> Bool {
+    static func deleteAllArticles() -> Bool {
         if let articles : [CoreDataArticle] = self.getAllArticlesToDelete() {
             for article in articles {
                 CoreDataContainer.shared.context.delete(article)
