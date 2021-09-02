@@ -87,11 +87,11 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title of the news" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1bs-Ky-sJS">
                                         <rect key="frame" x="20" y="25" width="394" height="145"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BPd-LB-7dX">
-                                        <rect key="frame" x="15" y="25" width="45" height="45"/>
+                                        <rect key="frame" x="5" y="0.0" width="45" height="45"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="8BR-xe-7ei"/>
                                             <constraint firstAttribute="width" constant="45" id="pO1-eL-mxQ"/>
@@ -108,9 +108,9 @@
                                     <constraint firstAttribute="trailing" secondItem="1bs-Ky-sJS" secondAttribute="trailing" id="1uu-k7-90h"/>
                                     <constraint firstAttribute="bottom" secondItem="1bs-Ky-sJS" secondAttribute="bottom" id="Pr8-h6-Mf9"/>
                                     <constraint firstItem="1bs-Ky-sJS" firstAttribute="top" secondItem="YBY-Ku-Nbd" secondAttribute="top" constant="25" id="ZcB-Vz-4uJ"/>
-                                    <constraint firstItem="BPd-LB-7dX" firstAttribute="leading" secondItem="YBY-Ku-Nbd" secondAttribute="leading" constant="15" id="icm-8z-GGF"/>
+                                    <constraint firstItem="BPd-LB-7dX" firstAttribute="leading" secondItem="YBY-Ku-Nbd" secondAttribute="leading" constant="5" id="icm-8z-GGF"/>
                                     <constraint firstItem="1bs-Ky-sJS" firstAttribute="leading" secondItem="YBY-Ku-Nbd" secondAttribute="leading" constant="20" id="k3P-yw-kmD"/>
-                                    <constraint firstItem="BPd-LB-7dX" firstAttribute="top" secondItem="YBY-Ku-Nbd" secondAttribute="top" constant="25" id="t5I-UX-HPf"/>
+                                    <constraint firstItem="BPd-LB-7dX" firstAttribute="top" secondItem="YBY-Ku-Nbd" secondAttribute="top" id="t5I-UX-HPf"/>
                                     <constraint firstAttribute="height" constant="170" id="vtg-Cy-HVK"/>
                                 </constraints>
                             </view>
@@ -156,6 +156,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="yvs-8e-c8V"/>
+                    <nil key="simulatedTopBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c5y-oC-qGM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
